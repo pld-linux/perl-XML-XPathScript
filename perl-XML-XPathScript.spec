@@ -15,6 +15,7 @@ Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}-%{version
 URL:		http://axkit.org/
 BuildRequires:	perl-XML-XPath
 BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
