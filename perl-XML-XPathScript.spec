@@ -13,6 +13,7 @@ Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+# Source0-md5:	df472292817b7e84a42fbb50c3869078
 URL:		http://axkit.org/
 BuildRequires:	perl-XML-XPath
 BuildRequires:	rpm-perlprov >= 4.1-13
