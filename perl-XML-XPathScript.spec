@@ -33,7 +33,7 @@ przekszta³cania XML-a do HTML-a, tekstu lub dowolnego innego formatu.
 %setup -q -n %{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 # some problem with XML constants - broken test ?
