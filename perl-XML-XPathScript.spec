@@ -12,7 +12,7 @@ Version:	0.03
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 URL:		http://axkit.org/
 BuildRequires:	perl-XML-XPath
 BuildRequires:	rpm-perlprov >= 3.0.3-16
