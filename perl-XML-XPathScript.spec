@@ -5,12 +5,13 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	XML-XPathScript
-Summary:	XML templating language
-Summary(pl):	Jêzyk szablonów XML
+Summary:	XML::XPathScript - XML templating language
+Summary(pl):	XML::XPathScript - jêzyk szablonów XML
 Name:		perl-XML-XPathScript
 Version:	0.11
 Release:	1
-License:	Artistic or GPL
+# same as perl
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	958b448047923e989c8d1f6e38fc2d2c
