@@ -9,13 +9,13 @@ Summary:	XML templating language
 Summary(pl):	Jêzyk szablonów XML
 Name:		perl-XML-XPathScript
 Version:	0.03
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 URL:		http://axkit.org/
 BuildRequires:	perl-XML-XPath
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -33,7 +33,8 @@ przekszta³cania XML-a do HTML-a, tekstu lub dowolnego innego formatu.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 # some problem with XML constants - broken test ?
@@ -53,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README 
 %attr(755,root,root) %{_bindir}/*
-%{perl_sitelib}/XML/*.pm
+%{perl_vendorlib}/XML/*.pm
 %{_mandir}/man3/*
