@@ -3,8 +3,8 @@
 %bcond_without	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	XML
-%define		pnam	XML-XPathScript
+%define	pdir	XML
+%define	pnam	XML-XPathScript
 Summary:	XML::XPathScript - XML templating language
 Summary(pl):	XML::XPathScript - jêzyk szablonów XML
 Name:		perl-XML-XPathScript
