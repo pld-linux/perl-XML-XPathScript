@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with	tests	# perform "make test"
+%bcond_without	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
@@ -11,7 +11,7 @@ Name:		perl-XML-XPathScript
 Version:	0.11
 Release:	1
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	958b448047923e989c8d1f6e38fc2d2c
@@ -39,7 +39,6 @@ przekszta³cania XML-a do HTML-a, tekstu lub dowolnego innego formatu.
 	INSTALLDIRS=vendor
 %{__make}
 
-# some problem with XML constants - broken test ?
 %{?with_tests:%{__make} test}
 
 %install
