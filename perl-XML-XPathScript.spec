@@ -35,7 +35,7 @@ przekszta³cania XML-a do HTML-a, tekstu lub dowolnego innego formatu.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 # some problem with XML constants - broken test ?
@@ -53,7 +53,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README 
+%doc Changes README
 %attr(755,root,root) %{_bindir}/*
 %{perl_vendorlib}/XML/*.pm
 %{_mandir}/man3/*
