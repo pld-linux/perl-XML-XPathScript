@@ -9,7 +9,7 @@ Summary:	XML::XPathScript - XML templating language
 Summary(pl):	XML::XPathScript - jêzyk szablonów XML
 Name:		perl-XML-XPathScript
 Version:	0.14
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -56,4 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %attr(755,root,root) %{_bindir}/*
 %{perl_vendorlib}/XML/*.pm
+%{perl_vendorlib}/XML/XPathScript
 %{_mandir}/man3/*
+
+#%{perl_vendorlib}/Apache/AxKit/Language/YPathScript.pm
