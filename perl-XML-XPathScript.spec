@@ -6,6 +6,7 @@
 %define		pdir	XML
 %define		pnam	XML-XPathScript
 Summary:	XML templating language
+Summary(pl):	Jêzyk szablonów XML
 Name:		perl-XML-XPathScript
 Version:	0.03
 Release:	1
@@ -19,16 +20,21 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XPathScript is an XML templating language that has some concepts from ASP
-and some from XSLT. This makes for a very flexible option for transforming
-XML to HTML or text or just about any other format.
+XPathScript is an XML templating language that has some concepts from
+ASP and some from XSLT. This makes for a very flexible option for
+transforming XML to HTML or text or just about any other format.
+
+%description -l pl
+XPathScript to jêzyk szablonów XML zawieraj±cy trochê pomys³ów z ASP i
+trochê z XSLT. Sk³ada siê to na bardzo elastyczny sposób
+przekszta³cania XML-a do HTML-a, tekstu lub dowolnego innego formatu.
 
 %prep
 %setup -q -n %{pnam}-%{version}
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make}
 
 # some problem with XML constants - broken test ?
 %{?_with_tests:%{__make} test}
@@ -40,7 +46,6 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -50,4 +55,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{perl_sitelib}/XML/*.pm
 %{_mandir}/man3/*
-	       
