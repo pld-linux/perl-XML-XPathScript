@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	XML-XPathScript
 Summary:	XML::XPathScript - XML templating language
-Summary(pl):	XML::XPathScript - jêzyk szablonów XML
+Summary(pl.UTF-8):   XML::XPathScript - jÄ™zyk szablonÃ³w XML
 Name:		perl-XML-XPathScript
 Version:	0.14
 Release:	2
@@ -26,10 +26,10 @@ XPathScript is an XML templating language that has some concepts from
 ASP and some from XSLT. This makes for a very flexible option for
 transforming XML to HTML or text or just about any other format.
 
-%description -l pl
-XPathScript to jêzyk szablonów XML zawieraj±cy trochê pomys³ów z ASP i
-trochê z XSLT. Sk³ada siê to na bardzo elastyczny sposób
-przekszta³cania XML-a do HTML-a, tekstu lub dowolnego innego formatu.
+%description -l pl.UTF-8
+XPathScript to jÄ™zyk szablonÃ³w XML zawierajÄ…cy trochÄ™ pomysÅ‚Ã³w z ASP i
+trochÄ™ z XSLT. SkÅ‚ada siÄ™ to na bardzo elastyczny sposÃ³b
+przeksztaÅ‚cania XML-a do HTML-a, tekstu lub dowolnego innego formatu.
 
 %prep
 %setup -q -n %{pnam}-%{version}
