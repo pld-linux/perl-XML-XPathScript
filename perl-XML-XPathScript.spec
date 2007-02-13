@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	XML-XPathScript
 Summary:	XML::XPathScript - XML templating language
-Summary(pl.UTF-8):   XML::XPathScript - język szablonów XML
+Summary(pl.UTF-8):	XML::XPathScript - język szablonów XML
 Name:		perl-XML-XPathScript
 Version:	0.14
 Release:	2
