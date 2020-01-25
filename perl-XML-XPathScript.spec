@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	XML-XPathScript
 Summary:	XML::XPathScript - XML templating language
